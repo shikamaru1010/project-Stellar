@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Ysabeau:wght@1&display=swap');
+/* font-family: 'PT Serif', serif;
+font-family: 'Ysabeau', sans-serif; */
+.category-list{
+    display: flex;
+}
+.text-titles{
+    font-family: 'PT Serif', serif;
+}
+.text-text{
+    font-family: 'Ysabeau', sans-serif;  
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #000;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.card{
+    position: relative;
+    width: 320px;
+    height: 430px;
+    background-color: #113347;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.card::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    width: 100%;
+    height: 100%;
+    background: #bbbbb1fb;
+    transform: skewY(345deg);
+    -webkit-transform: skewY(345deg);
+    -moz-transform: skewY(345deg);
+    -ms-transform: skewY(345deg);
+    -o-transform: skewY(345deg);
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.card:hover::before{
+    top: -70%;
+    transform: skewY(390deg);
+    -webkit-transform: skewY(390deg);
+    -moz-transform: skewY(390deg);
+    -ms-transform: skewY(390deg);
+    -o-transform: skewY(390deg);
+}
+.card::after{
+    content: 'Samsung';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: 'PT Serif', serif;
+    font-weight: 600;
+    font-size: 5rem;
+    color: rgba(0, 0, 9,0.1);
+}
+.card .imgBX{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    z-index: 1;
+}
+.card .imgBX img{
+    max-width: 90%;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.card:hover .imgBX img{
+    max-width: 50%;
+}
+.card .contentBx{
+    position: relative;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+
+.card .contentBx h3{
+    margin-top: 10px;
+    font-size: 38px;
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card .price{
+    font-size: 24px;
+    color: white;
+    font-weight: 500;
+    
+    letter-spacing: 1px;
+}
+.card .contentBx .buy{
+    position: relative;
+    top: 200px;
+    opacity: 0;
+    padding: 10px 30px;
+    margin-top: 15px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: #078686fb;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+.card .contentBx .buy:hover{
+  background-color: #000;
+}
+
+.card:hover .contentBx .buy{
+    top: 0;
+    opacity: 1;
+    font-family: 'PT Serif', serif;
+    
+}
