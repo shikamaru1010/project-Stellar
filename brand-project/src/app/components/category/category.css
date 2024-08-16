@@ -3,19 +3,16 @@
 font-family: 'Ysabeau', sans-serif; */
 .category-list{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+    max-width: 130rem;
+    margin: 0 auto;
 }
 .text-titles{
     font-family: 'PT Serif', serif;
 }
 .text-text{
     font-family: 'Ysabeau', sans-serif;  
-}
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #000;
 }
 *{
     margin: 0;
@@ -24,9 +21,9 @@ body{
 }
 .card{
     position: relative;
-    width: 320px;
-    height: 430px;
-    background-color: #113347;
+    width: 25rem;
+    height: 35rem;
+    background-color: var(--colorpink);
     border-radius: 20px;
     overflow: hidden;
 }
@@ -56,16 +53,7 @@ body{
     -ms-transform: skewY(390deg);
     -o-transform: skewY(390deg);
 }
-.card::after{
-    content: 'Samsung';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    font-family: 'PT Serif', serif;
-    font-weight: 600;
-    font-size: 5rem;
-    color: rgba(0, 0, 9,0.1);
-}
+
 .card .imgBX{
     position: relative;
     width: 100%;

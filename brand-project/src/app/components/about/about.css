@@ -1,0 +1,19 @@
+.about{
+    max-width: 130rem;
+    margin: auto;
+    display: flex;
+    gap: 6.4rem;
+    margin-bottom: 8rem;
+}
+.about-photo{
+    width: 56rem;
+    height: 84rem;
+}
+.paragraphs{
+    color: white;
+    font-size: 3rem;
+}
+span {
+    color: #FF9F1C;
+    font-size: rem;
+}

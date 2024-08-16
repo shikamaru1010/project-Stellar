@@ -1,0 +1,40 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer-list{
+    margin: auto;
+}
+.footer img{
+    display: block;
+    width: 20rem;
+    margin: 8rem auto 4rem auto;
+}
+.contact{
+    display: flex;
+}
+.contact img{
+    width: 48px;
+    height: 48px;
+    color: var(--coloraccent);
+    margin:auto;
+}
+.contact p{
+    margin: auto;
+    text-align: start;
+}
+table{
+    background-color: var(--coloraccent);
+    height: 100%;
+    width: 15rem;
+}
+table tr{
+    display: block;
+    text-align: center;
+    padding: 1.5rem;
+    margin: auto;
+}
+.footer-links a,p{
+    color: white;
+    
+}
