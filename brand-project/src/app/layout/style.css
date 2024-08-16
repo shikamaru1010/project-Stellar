@@ -215,3 +215,19 @@ html {
     margin: auto auto;
     background-color: white;
 }
+
+/*********************************/
+/* HERO 2 */
+/*********************************/
+.hero2 {
+    background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url("./hipster.jpg");
+    background-size: cover;
+    background-position: center;
+    display: block;
+    height: 80vh;
+}
+.hero2-txt{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    text-align: center;
+}

@@ -2,14 +2,14 @@ import './about.css';
 export default function about() {
   return (
     <div>
-      <h1 style={{display:'block',marginBottom:'6rem',textAlign:'center'}}>About us</h1>
+      <h1 style={{display:'block',marginBottom:'6rem',textAlign:'center',color: 'white'}}>About us</h1>
       <div className="about">
         <div>
 
           <img className='about-photo' src='/hotstuff1.jpg'   alt="about-photo"/>
           
         </div>
-        <div>
+        <div className='about-elements'>
 
           <p className='paragraphs'>
           Welcome to <span>Stellar Streetwear</span> , a brand born out of passion, creativity, and friendship.

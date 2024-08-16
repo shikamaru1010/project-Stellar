@@ -33,11 +33,13 @@ export default function Product() {
         <div className="icon"><i className="material-icons"><img src="../../../public/info.png"></img></i></div>
         <div className="contents">
           <table>
-            
+           <tbody>
             <tr>
               <th>Available size</th>
               <th>Height</th>
             </tr>
+           
+           </tbody> 
             
           </table>
         </div>

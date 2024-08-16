@@ -5,36 +5,45 @@
 .footer-list{
     margin: auto;
 }
+.logo-text{
+    text-align: center;
+    margin-top: 2rem;
+}
 .footer img{
     display: block;
     width: 20rem;
     margin: 8rem auto 4rem auto;
 }
 .contact{
-    display: flex;
-}
-.contact img{
-    width: 48px;
-    height: 48px;
-    color: var(--coloraccent);
-    margin:auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 2rem;
 }
 .contact p{
-    margin: auto;
-    text-align: start;
+    margin: auto auto auto 0;
+}
+.contact img{
+    width: 24px;
+    height: 24px;
+    color: var(--coloraccent);
+    margin:auto;
 }
 table{
     background-color: var(--coloraccent);
     height: 100%;
-    width: 15rem;
+    width: 20rem;
 }
-table tr{
+table td{
     display: block;
     text-align: center;
     padding: 1.5rem;
-    margin: auto;
+    
 }
 .footer-links a,p{
     color: white;
     
+}
+.footer-links  table{
+    margin: auto;
 }
