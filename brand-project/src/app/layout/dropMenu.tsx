@@ -1,12 +1,28 @@
-import { Dropdown } from 'semantic-ui-react'
-const options =[
- {key: 1,text: 'BEST SELLING', value: 1},       
- {key: 1,text: 'ALPHABETICALLY A-Z', value: 1},       
- {key: 1,text: 'ALPHABETICALLY Z-A', value: 2},       
- {key: 1,text: 'PRICE, LOW TO HIGH', value: 3},       
- {key: 1,text: 'PRICE,  HIGH TO LOW', value: 4},       
-]
-const DropdownClearable = () =>{
-     return <Dropdown className='dropdown-menu' clearable options={options} selection />
-};
-export default DropdownClearable;
+import {
+  DropdownMenu,
+  DropdownItem,
+  DropdownHeader,
+  Dropdown,
+} from 'semantic-ui-react'
+
+const DropdownExampleHeader = () => (
+  <Dropdown
+    text='Filter'
+    icon='filter'
+    floating
+    labeled
+    button
+    className='icon'
+  >
+    <DropdownMenu className='dropdown-menu'>
+      <DropdownHeader icon='tags' content='Filter by tag' />
+      <DropdownItem>best sellers</DropdownItem>
+      <DropdownItem>alphabetically A-Z</DropdownItem>
+      <DropdownItem>alphabetically Z-A</DropdownItem>
+      <DropdownItem>price,low to high</DropdownItem>
+      <DropdownItem>price, high to low</DropdownItem>
+    </DropdownMenu>
+  </Dropdown>
+)
+
+export default DropdownExampleHeader

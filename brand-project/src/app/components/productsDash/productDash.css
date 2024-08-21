@@ -1,0 +1,8 @@
+.productsDashboard{
+    display: flex;
+    margin-top: 8rem;
+}
+.productsList{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}

@@ -226,8 +226,8 @@ html {
     display: block;
     height: 80vh;
 }
-.hero2-txt{
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    text-align: center;
+.ui.labeled.icon.button{
+    position: absolute;
+    right: 2%;
+    top: 93%;
 }

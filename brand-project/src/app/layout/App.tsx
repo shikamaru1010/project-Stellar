@@ -1,11 +1,11 @@
 import Hero from "../../features/dashboard/hero";
 import ProductList from "../components/product/productList";
-import NavBar from "./nav/navBar";
-import CategoryList from "../components/category/categoryList"
-import About from '../components/about/about';
-import Footer from '../layout/footer/footer';
+import NavBar from "../components/nav/navBar";
+import CategoryList from "./category/categoryList"
+import About from './about/about';
+import Footer from '../components/footer/footer';
 import Hero2 from '../../features/dashboard/hero2';
-
+import ProductsDashboard from "../components/productsDash/productsDashboard";
 function App() {
   
   return (
@@ -20,6 +20,8 @@ function App() {
     <>
     <NavBar />
     <Hero2 />
+    <ProductsDashboard />
+    
     </>
   )
 }
