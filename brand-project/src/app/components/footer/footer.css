@@ -40,10 +40,20 @@ table td{
     padding: 1.5rem;
     
 }
-.footer-links a,p{
-    color: white;
-    
+
+.filtertabela{
+    border-radius: 5px;
+    border: solid white;
 }
-.footer-links  table{
+.footer-links{
+    background-color: var(--coloraccent);
+    padding: 3rem 4rem;
     margin: auto;
+}
+.footer-links p{
+    text-align: center;
+}
+.footer-links a{
+    color: white;
+    font-size: 1.6rem;
 }

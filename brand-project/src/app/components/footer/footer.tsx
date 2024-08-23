@@ -14,16 +14,11 @@ export default function footer() {
         <p>interstellar@gmail.com</p></div>
       </div>
       <div className='footer-links'>
-        
-        <table>
-          <tbody>
-            <tr><td><p><a>home</a></p></td></tr>
-            <tr><td><p><a>man</a></p></td></tr>
-            <tr><td><p><a>woman</a></p></td></tr>
-            <tr><td><p><a>kids</a></p></td></tr>
-            <tr><td><p><a>contact</a></p></td></tr>
-          </tbody>
-        </table>
+        <p><a>Home</a></p>
+        <p><a>Man</a></p>
+        <p><a>Woman</a></p>
+        <p><a>Kids</a></p>
+        <p><a>Contact</a></p>
       </div>
     </div>
   )

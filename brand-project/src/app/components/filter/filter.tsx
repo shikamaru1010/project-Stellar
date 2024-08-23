@@ -3,7 +3,7 @@ import DropMenuFilter from '../../layout/dropMenuFilter'
 export default function filter() {
   return (
     <div>
-      <table>
+      <table className="filtertabela">
         <tbody>
           <tr>
             <td>

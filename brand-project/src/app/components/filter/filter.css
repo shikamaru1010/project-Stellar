@@ -29,3 +29,8 @@ table td button{
     padding: 0.5rem 4rem;
     border-radius: 2rem;
 }
+span{
+    color: var(--colorprimary);
+    font-size: 1.6rem;
+    text-align: center;
+}
