@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Ysabeau:wght@1&display=swap');
 /* font-family: 'PT Serif', serif;
 font-family: 'Ysabeau', sans-serif; */
+.category-btns {
+    display: flex;
+    width: 40rem;
+    margin: auto;
+    margin-bottom: 6rem;
+}
+.category-btns p{
+    margin: auto;
+    color: white;
+}
+.category-btns p:hover{
+    color: var(--coloraccent);
+    border-bottom: solid var(--coloraccent);
+    font-size: 1.5rem;
+}
+.ui.button {
+    background-color: var(--coloraccent);
+}
 .category-list{
     display: flex;
     justify-content: space-between;
@@ -23,7 +41,6 @@ font-family: 'Ysabeau', sans-serif; */
     position: relative;
     width: 25rem;
     height: 35rem;
-    background-color: var(--colorpink);
     border-radius: 20px;
     overflow: hidden;
 }

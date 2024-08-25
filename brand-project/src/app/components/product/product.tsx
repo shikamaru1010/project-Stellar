@@ -1,21 +1,27 @@
 import { ItemHeader } from "semantic-ui-react";
 import "./product.css";
+import { AppProduct } from "../../types/product";
 
+type Props = {
+  product: AppProduct;
+}
 
-
-export default function Product({product}: any) {
+export default function Product({product}: Props) {
   return (
   <div>
 
     <div className="wrapper" >
-      <div className="container">
+      <div className="container" style={{
+        backgroundImage: `url(${product.hostUrl})`,
+        backgroundSize: 'cover'
+      }}>
         <div className="top"></div>
         <div className="bottom">
           <div className="left">
             <div className="details">
               <h1 ><ItemHeader>
                 {product.title}</ItemHeader></h1>
-              <p style={{color: 'black'}} >{product.price}</p>
+              <p style={{color: 'black'}} >{product.price}$</p>
             </div>
             <div className="buy"><i className="material-icons"><img src="../../../public/shopping-cart-add.png" style={{marginTop: '3.2rem'}}></img></i></div>
           </div>
