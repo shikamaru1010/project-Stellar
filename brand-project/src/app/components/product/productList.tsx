@@ -4,7 +4,9 @@ import { AppProduct } from "../../types/product";
 type Props = {
   products: AppProduct[];
 }
-export default function productList({products}:Props) {
+export default function productList({products}:Props) 
+
+{
   return (
     <div>
       <div className="container heading">

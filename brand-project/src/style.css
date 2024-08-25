@@ -161,10 +161,17 @@ html {
 .main-nav-list{
     list-style: none;
     display: flex;
+    gap: 3rem;
 }
-.links-nav{
+.main-nav-list a{
     color: black;
     font-size: 1.6rem;
+}
+.main-nav-list a:hover{
+    border-bottom: 1px solid black;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: 0.2s;
 }
 .linkovi{
     display: flex;
@@ -177,6 +184,29 @@ html {
 .linkovi-Login{
     font-size: 1.6rem;
     padding-right: 1rem;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    height: fit-content;
+    margin-top: 0.2rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+.submenu li{
+    display: block;
+    text-align: center;  
+    padding: 1rem 0.5rem;
+    text-wrap: nowrap;
+}
+.submenu li a{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: white;
+}
+.main-nav-list li:hover > .submenu{
+    display: block;
+
 }
 /*********************************/
 /* HERO */

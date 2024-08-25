@@ -8,21 +8,16 @@ export default function NavBar(){
             </MenuItem>
             <MenuItem>
                 <ul className="main-nav-list">
-                    <li>
-                    <Button>
-                        <a className="links-nav"href="/home">Home</a>
-                    </Button>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">collection</a>
+                    <ul className="submenu">
+                        <li><a href="#">Мan</a></li>
+                        <li><a href="#">Woman</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Unisex</a></li>
+                    </ul>
                     </li>
-                    <li>
-                        <Button>
-                            <a className="links-nav">Collection</a>
-                        </Button>
-                    </li>
-                    <li>
-                        <Button>
-                            <a className="links-nav">Contact</a>
-                        </Button>                
-                    </li>
+                    <li><a href="#">contact</a></li>
                 </ul>
             </MenuItem>
             <MenuItem position="right">
