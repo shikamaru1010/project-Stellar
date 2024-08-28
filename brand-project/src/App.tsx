@@ -10,6 +10,7 @@ import { useEffect, useState } from "react";
 import { AppProduct } from "./app/types/product";
 /*import Hero2 from '../../features/dashboard/hero2';
 import ProductsDashboard from "../components/productsDash/productsDashboard";*/
+import Contact from "../src/app/layout/contactUs/contact";
 function App() {
   // sjebo Props types
   const[products,setProducts] = useState<AppProduct[]>([])
@@ -19,6 +20,9 @@ function App() {
   },[])
   return (
     <>
+    <Contact />
+      </>
+    /*<>
       <NavBar />
       <Hero />
       <ProductList products={products}/>
