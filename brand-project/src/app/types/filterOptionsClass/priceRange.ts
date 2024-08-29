@@ -1,4 +1,4 @@
-export class Price {
+export class PriceRange {
     private max: number;
     private min: number;
 
@@ -6,11 +6,15 @@ export class Price {
         this.min = min;
         this.max = max;
     }
-    getPrice(): {min: number,max: number}{
+    getPriceRange(): {min: number,max: number}{
         return {min: this.min,max: this.max};
     }
     setPrice(min: number,max:number){
         this.min = min;
         this.max = max;
     }
+    setPriceRange(min: number, max: number) {
+        this.min = min;
+        this.max = max;
+      }
 }

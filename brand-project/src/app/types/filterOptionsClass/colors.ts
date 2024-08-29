@@ -1,10 +1,10 @@
-export class Color {
+export class Colors {
     private color: string[];
 
     constructor(){
         this.color = ["red", "green", "blue","orange"];
     }
-    getColor(): string[]{
+    getColors(): string[]{
         return this.color;
     }
 }
