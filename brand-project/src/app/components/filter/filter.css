@@ -1,3 +1,6 @@
+.filter-tabel{
+    display: flex;
+}
 .expandIcon{
     width: 30rem;
 }

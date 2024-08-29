@@ -14,7 +14,7 @@ export default function productList({products}:Props)
       <h4 style={{margin: '2rem auto 6rem auto'}}><a style={{color: 'white'}}>View all</a></h4>
       </div>
       <div  className="container product-list">
-        {products.map((product) => (
+        {products.slice(0,3).map((product) => (
           <Product key={product.id} product={product} />
         ))}
       </div>

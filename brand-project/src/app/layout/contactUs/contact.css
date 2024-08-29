@@ -1,0 +1,17 @@
+.drustvene-mreze{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+.drustvene-mreze-elementi{
+    display: flex;
+}
+.drustvene-mreze div img{
+    margin-right: 0.5rem;
+    z-index: 1;
+}
+.drustvene-mreze div h3{
+    font-size: 2rem;
+    margin: auto;
+    color: white;
+}

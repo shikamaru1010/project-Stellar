@@ -1,20 +1,28 @@
+import { Dropdown, DropdownMenu } from 'semantic-ui-react';
+import DropDown from "../../layout/dropMenu"; 
+import { ProductsAll } from '../../types/products';
 import Filters from '../filter/filter'
-import Product from '../product/product'
 import "./productDash.css";
+import ProductSample from './productSample';
 
-export default function productsDashboard() {
+interface ProductProps{
+  products: ProductsAll[];
+}
+export default function productsDashboard({products}:ProductProps) {
   return (
+    <>
+
+    <h1 style={{fontSize: '5rem',textAlign: 'center',color: 'white'}}>{products.length} products
+    <DropDown />
+    </h1>
     <div className='productsDashboard'>
       <Filters/>
       <div className='productsList'>
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
-        <Product />
+        {products.map((product) =>(
+          <ProductSample key={product.id} product={product} />
+        ))}
       </div>
     </div>
+    </>
   )
 }
