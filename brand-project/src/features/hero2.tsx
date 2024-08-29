@@ -1,5 +1,3 @@
-import Dropdown from "../app/layout/dropMenu"
-
 export default function hero2() {
   return (
     
