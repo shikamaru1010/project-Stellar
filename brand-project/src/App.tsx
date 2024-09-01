@@ -22,26 +22,26 @@ function App() {
   },[])
 
   return (
+    <>
+    <NavBar />
+    <Hero />
+    <ProductList products={products}/>
+    <CategoryList categoryProducts={categoryProduct}/>
+    <About />
+    <Footer />
+    </>
+    /*<>
+    <NavBar />
+    <Hero2 />
+    <ProductsDashboard products={productsData}/>
+    <Footer />
+    </>*/
     /*<>
       <UserInfo />
     </>*/
     /*<>
     <Contact />
       </>*/
-    /*<>
-      <NavBar />
-      <Hero />
-      <ProductList products={products}/>
-      <CategoryList categoryProducts={categoryProduct}/>
-      <About />
-      <Footer />
-    </>*/
-    <>
-    <NavBar />
-    <Hero2 />
-    <ProductsDashboard products={productsData}/>
-    <Footer />
-    </>
   )
 }
 

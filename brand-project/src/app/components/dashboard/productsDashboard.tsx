@@ -1,5 +1,5 @@
-import { Dropdown, DropdownMenu } from 'semantic-ui-react';
-import DropDown from "../../layout/dropMenu"; 
+
+import DropDown from "../dropMenu"; 
 import { ProductsAll } from '../../types/products';
 import FiltersMenu from '../filter/filtersMenu'
 import "./productDash.css";
