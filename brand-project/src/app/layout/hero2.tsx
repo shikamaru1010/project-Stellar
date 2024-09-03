@@ -1,4 +1,4 @@
-export default function hero2() {
+export default function Hero2() {
   return (
     
     <div>

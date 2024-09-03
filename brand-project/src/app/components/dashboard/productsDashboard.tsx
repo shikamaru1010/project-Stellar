@@ -8,7 +8,7 @@ import ProductSample from './productSample';
 interface ProductProps{
   products: ProductsAll[];
 }
-export default function productsDashboard({products}:ProductProps) {
+export default function ProductsDashboard({products}:ProductProps) {
   return (
     <>
 

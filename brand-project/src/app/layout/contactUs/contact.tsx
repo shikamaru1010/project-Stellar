@@ -15,7 +15,7 @@ const location = {
     lat: 44.786325,
     lng: 20.516553 
 };
-export default function contact() {
+export default function Contact() {
   return (
     <div  style={{backgroundColor: 'black'}}>
       <NavBar />

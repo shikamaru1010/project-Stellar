@@ -1,5 +1,5 @@
 import './footer.css'
-export default function footer() {
+export default function Footer() {
   return (
     <div className='footer'>
       <div><img src='/logo.png' alt='logo'/>

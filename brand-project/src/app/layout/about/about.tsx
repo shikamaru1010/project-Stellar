@@ -1,5 +1,5 @@
 import './about.css';
-export default function about() {
+export default function About() {
   return (
     <div>
       <h1 style={{display:'block',marginBottom:'6rem',textAlign:'center',color: 'white'}}>About us</h1>

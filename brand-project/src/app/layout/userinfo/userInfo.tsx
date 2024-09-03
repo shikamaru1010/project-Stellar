@@ -3,7 +3,7 @@ import {User} from "../../types/user"
 interface UserProps{
   user: User;
 }
-export default function userInfo({user}:UserProps) {
+export default function UserInfo({user}:UserProps) {
   return (
     <>
       <img  src='/user.png'/>

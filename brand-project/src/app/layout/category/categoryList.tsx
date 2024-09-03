@@ -2,7 +2,7 @@ import { useState } from "react";
 import Category from "./categoryCard";
 import { Button } from "semantic-ui-react";
 import { categoryProduct, newArrivals } from "../../api/sampleData1";
-export default function categoryList(props:any) {
+export default function CategoryList(props:any) {
   const[products,setProducts] = useState(categoryProduct.slice(0,4));
   
   const showTrending = () => {
