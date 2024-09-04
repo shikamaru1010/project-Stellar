@@ -5,7 +5,7 @@ import ProductsDashboard from '../components/dashboard/productsDashboard'
 import Footer from '../components/footer/footer'
 import { AppProduct } from '../types/product'
 import { productData } from '../api/sampleData'
-import { ProductsAll } from '../types/products'
+import { ProductsAll, productsData } from '../types/products'
 
 export default function CollectionPage() {
     const[products,setProducts] = useState<ProductsAll[]>([])
@@ -15,7 +15,7 @@ export default function CollectionPage() {
     <div>
       <NavBar />
       <Hero2 />
-      <ProductsDashboard products={products} />
+      <ProductsDashboard products={productsData} />
       <Footer />
       
     </div>
