@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Container, Menu, MenuItem } from "semantic-ui-react";
 export default function NavBar(){
     return(
@@ -8,8 +9,8 @@ export default function NavBar(){
             </MenuItem>
             <MenuItem>
                 <ul className="main-nav-list">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">collection</a>
+                    <li><Link to="/home">home</Link></li>
+                    <li><Link to="/collection">collection</Link>
                     <ul className="submenu">
                         <li><a href="#">Мan</a></li>
                         <li><a href="#">Woman</a></li>
@@ -17,7 +18,7 @@ export default function NavBar(){
                         <li><a href="#">Unisex</a></li>
                     </ul>
                     </li>
-                    <li><a href="#">contact</a></li>
+                    <li><Link to='/contact'>contact</Link></li>
                 </ul>
             </MenuItem>
             <MenuItem position="right">
