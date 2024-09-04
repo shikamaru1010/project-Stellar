@@ -14,6 +14,8 @@ export default function HomePage() {
     useEffect(() => {
             setProducts(productData);
     },[])
+
+    
     
   return (
     <div>

@@ -13,7 +13,7 @@ import ProductsDashboard from "../src/app/components/dashboard/productsDashboard
 import Contact from "./app/layout/contactUs/contact";
 import UserInfo from "./app/layout/userinfo/userInfo";
 import { productsData } from "./app/types/products";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 function App() {
   // sjebo Props types
   const[products,setProducts] = useState<AppProduct[]>([])
@@ -22,11 +22,13 @@ function App() {
     setProducts(productData);
   },[])
 
+  const location = useLocation();
+  const isHomeRoute = location.pathname === '/';
   return (
     
     <>
-    <NavBar />
-    <Hero />
+    {isHomeRoute && <NavBar/>}
+    {isHomeRoute && <Hero />}
     <Outlet />
     </>
   )
