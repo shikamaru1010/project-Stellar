@@ -1,0 +1,47 @@
+.spa-div-content{
+    background-color: black;
+    height: 100vh;
+   
+}
+.spa-elements {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 132rem;
+
+    margin: 0 auto;
+}
+.spa-element{
+    margin: auto;
+}
+.spa-element h1,h2{
+    color: var(--colorsecondary);
+}
+.spa-element h1{
+    font-size: 6.2rem;
+    margin-bottom: 6rem;
+}
+.spa-element h2{
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 15rem;
+}
+.spa-element button{
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    display: block;
+    
+}
+.spa-element button:hover{
+    cursor: pointer;  
+}
+.spa-element p{
+    color: black;
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+.spa-element img{
+    height: 70rem;
+}
+.spa-element a{
+    color: black;
+}
