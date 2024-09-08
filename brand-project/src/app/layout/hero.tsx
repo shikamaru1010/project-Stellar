@@ -6,8 +6,7 @@ export default function Hero(){
         <>
         <section className="section-hero">
             <div className="hero">
-                <h1 className="heading-primary">Feel the SPACE</h1>
-                <h2 className="heading-secondary">We empower individuals to express their unique identities boldly.</h2>
+                <h2 className="heading-secondary" style={{marginTop: '12rem'}}>We empower individuals to express their unique identities boldly.</h2>
                 <Button size="huge"><Link to='/collection' style={{color: 'black'}}>
                 Shop Now
                 </Link>

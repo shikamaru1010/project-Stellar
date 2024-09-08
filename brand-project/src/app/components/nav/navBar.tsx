@@ -1,10 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Container, Menu, MenuItem } from "semantic-ui-react";
 export default function NavBar(){
     return(
         <Menu inverted={true}>
             <Container className="menu">
-            <MenuItem  position="left">
+            <MenuItem  position="left" as={NavLink} to='/'>
                 <img className="logo" src="/logo.png" alt="logo" style={{width: '10rem'}}/>
             </MenuItem>
             <MenuItem>

@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './footer.css'
+import ScrollUp from '../scrollToTop'
 export default function Footer() {
   return (
     <div className='footer'>
@@ -15,7 +16,7 @@ export default function Footer() {
         <p>interstellar@gmail.com</p></div>
       </div>
       <div className='footer-links'>
-        <p><Link to='/home'>home</Link></p>
+        <p><Link to='/'>home</Link></p>
         <p><Link to='/home'>men</Link></p>
         <p><Link to='/home'>women</Link></p>
         <p><Link to='/home'>kids</Link></p>

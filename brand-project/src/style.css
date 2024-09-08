@@ -213,7 +213,7 @@ html {
 /* HERO */
 /*********************************/
 .section-hero {
-    background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url("./astronaut.jpg");
+    background-image: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)), url("/hero.jpg");
     background-size: cover;
     background-position: center;
     display: block;
@@ -237,8 +237,11 @@ html {
     transform: translate(-50%, -50%);
 }
 .ui.huge.button{
-    font-size: 1.6rem;
-    display: block;
+    font-size: 2rem;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 20rem;
     margin: auto auto;
     background-color: white;
