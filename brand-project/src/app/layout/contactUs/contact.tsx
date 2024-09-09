@@ -38,7 +38,7 @@ export default function Contact() {
         <h3 style={{color: 'white',marginTop: '0',marginBottom:'8rem'}}>066424579</h3>
         <Segment style={{backgroundColor: 'black'}}>
           <Header content="Online Form" style={{color: 'white'}} />
-          <Form>
+          <Form >
             <Form.Field>
               <input type="text" placeholder='First and Last Name'/>
             </Form.Field>
@@ -46,10 +46,10 @@ export default function Contact() {
               <input type="text" placeholder='E-mail'/>
             </Form.Field>
             <Form.Field>
-              <input type="text" placeholder='Phone Number'/>
+              <input type="text" placeholder='Product Category'/>
             </Form.Field>
             <Form.Field>
-              <input type="text" placeholder='Street'/>
+              <input type="text" placeholder='Product title'/>
             </Form.Field>
             <textarea id='description' name='description' rows={6}
             placeholder='Enter a detailed description here...'>

@@ -1,4 +1,4 @@
-import { Button, ItemHeader } from "semantic-ui-react";
+import { ItemHeader } from "semantic-ui-react";
 import "../product/product.css";
 import { ProductsAll } from "../../types/products";
 import { Link } from "react-router-dom";
