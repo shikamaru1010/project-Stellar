@@ -168,7 +168,6 @@ html {
     font-size: 1.6rem;
 }
 .main-nav-list a:hover{
-    border-bottom: 1px solid black;
     font-weight: 600;
     transition: 0.2s;
 }
@@ -189,7 +188,7 @@ html {
     position: absolute;
     height: fit-content ;
     background-color: rgba(0, 0, 0, 1);
-    border-radius: rem;
+    border-radius: 1rem;
     padding: 0.5rem auto;
     z-index: 1;
 }
