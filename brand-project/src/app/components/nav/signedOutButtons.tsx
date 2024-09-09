@@ -7,8 +7,8 @@ export default function SignedOutButtons({setAuth}:Props) {
   return (
     <div>
       <MenuItem>
-                <Button   style={{backgroundColor: '#1E90FF',color: 'white'}} content='Login' className="login-btn" onClick={()=> setAuth(true)}/>
-                <Button  style={{backgroundColor: '#FF9F1C;',color: 'white'}}  content='Register' className="register-btn" />
+                <Button   style={{backgroundColor: '#023e8a',color: 'white',marginRight: '1rem'}} content='Login' className="login-btn" onClick={()=> setAuth(true)}/>
+                <Button  style={{backgroundColor: '#FF9F1C',color: 'white'}}  content='Register' className="register-btn" />
         </MenuItem>
     </div>
   )

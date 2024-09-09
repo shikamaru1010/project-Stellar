@@ -1,6 +1,7 @@
-import { ItemHeader } from "semantic-ui-react";
+import { Button, ItemHeader } from "semantic-ui-react";
 import "../product/product.css";
 import { ProductsAll } from "../../types/products";
+import { Link } from "react-router-dom";
 
 interface ProductProps  {
   product: ProductsAll;
@@ -20,7 +21,7 @@ export default function ProductSample({product}: ProductProps) {
           <div className="left">
             <div className="details">
               <h1 style={{fontSize: '1.6rem'}}><ItemHeader>
-                {product.title}</ItemHeader></h1>
+                <Link to={`/collection/${product.id}`}>{product.title}</Link></ItemHeader></h1>
               <p style={{color: 'black'}} >{product.price}$</p>
             </div>
             <div className="buy"><i className="material-icons"><img src="../../../public/shopping-cart-add.png" style={{marginTop: '3.2rem'}}></img></i></div>
