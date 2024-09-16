@@ -1,4 +1,6 @@
+import NavBar from "../../components/nav/navBar";
 import {User} from "../../types/user"
+import "./userInfo.css"
 
 interface UserProps{
   user: User;
@@ -6,17 +8,19 @@ interface UserProps{
 export default function UserInfo({user}:UserProps) {
   return (
     <>
-      <img  src='/user.png'/>
-      <h1>User Information</h1>
+    <NavBar />
+    <div className="user-div">
+      <img  src='/user.png' style={{width: '32px'}} />
+      <h1 style={{color: 'white'}}>User Information</h1>
       <div>
-        <label>User first and last name:</label>
-        <label> {user.firstName} {user.lastName}</label>
-        <label>User gmail:</label>
-        <label>{user.email}</label>
-        <label>User adress:</label>
-        <label>{user.adress.street}{user.adress.city} {user.adress.country}</label>
+        <div className="div-elements">
+        <p>{user.firstName} {user.lastName}</p>
+        <p>{user.email}</p>        
+        <p>{user.adress.street},{user.adress.city}, {user.adress.country}</p>
+        </div>
         
       </div>
+    </div>
     </>
   )
 }

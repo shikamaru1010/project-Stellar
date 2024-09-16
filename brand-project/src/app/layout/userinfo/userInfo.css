@@ -1,0 +1,26 @@
+.user-div{
+    background-color: black;
+    height: 90vh;
+    text-align: center;
+    padding-top: 10rem;
+}
+.user-div h1{
+    text-align: start;
+    padding-left: 20rem;
+    font-size: 3.2rem;
+}
+
+
+
+.div-elements p{
+    color: white;
+    margin: auto;
+    text-align: start;
+    padding-left: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--coloraccent);
+}

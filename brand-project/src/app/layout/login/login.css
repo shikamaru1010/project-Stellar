@@ -1,0 +1,40 @@
+.login-elements{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+}
+.login-elements h1,h3{
+    color: white;
+    text-align: center;
+}
+.login-elements h1{
+    font-size: 6.2rem;
+}
+.login-elements h3{
+    font-size: 2.4rem;
+    margin-bottom: 10rem;
+}
+
+.login-btn{
+    background-color: white;
+    color: black;
+    padding: 0.5rem 7rem;
+    border-radius: 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.login-inputs{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+.login-inputs input{
+    width: 30rem;
+    padding: 0.5rem 2rem;
+}
+.login-inputs img{
+    width: 32px;
+}
