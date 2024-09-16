@@ -1,8 +1,8 @@
 
-import { NavLink, useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import "./pages.css"
 
-export default function homePage() {
+export default function HomePage() {
     const navigate = useNavigate();
   return (
     <div className='spa-div-content'>

@@ -8,7 +8,7 @@ import CategoryList from '../layout/category/categoryList'
 import { categoryProduct } from '../api/sampleData1'
 import About from '../layout/about/about'
 import Footer from '../components/footer/footer'
-export default function HomePage() {
+export default function LandingPage() {
     const[products,setProducts] = useState<AppProduct[]>([])
     
     useEffect(() => {

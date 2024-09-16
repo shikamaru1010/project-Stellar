@@ -3,7 +3,6 @@ import { Sizes } from '../../types/filterOptionsClass/sizes';
 import { Colors } from '../../types/filterOptionsClass/colors'; 
 import { PriceRange } from '../../types/filterOptionsClass/priceRange'; 
 import "./filter.css"
-import { Button } from 'semantic-ui-react';
 
 const FilterComponent: React.FC = () => {
   const sizes = new Sizes();

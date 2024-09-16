@@ -5,12 +5,13 @@ import "./userInfo.css"
 interface UserProps{
   user: User;
 }
+
 export default function UserInfo({user}:UserProps) {
   return (
     <>
     <NavBar />
     <div className="user-div">
-      <img  src='/user.png' style={{width: '32px'}} />
+      <img  src='/information.png' style={{width: '64px'}} />
       <h1 style={{color: 'white'}}>User Information</h1>
       <div>
         <div className="div-elements">

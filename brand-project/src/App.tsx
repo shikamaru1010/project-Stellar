@@ -7,30 +7,20 @@ import UserInfo from "./app/layout/userinfo/userInfo";
 import { User } from "./app/types/user";
 // da li sam u linijama 30-37 uradio dve iste funkcionalnosti
 
-/* {location.pathname === "/" ? <HomePage /> : (
-      <>  
-      <Outlet />
-      </>
-    )}
-    <ScrollUp />*/
-    const user: User = {
-      firstName: 'Ratko',
-      lastName: 'Sisovic',
-      email: 'ralesisko@gmail.com',
-      adress: {
-        street: 'Sisovici 7',
-        city: 'Cajetina',
-        country: 'Serbia',
-      }
-    };
+/* */
+   
 function App() {
 
 
   const location = useLocation();
   return (
     <>
-   <UserInfo  user={user}/>
-    
+    {location.pathname === "/" ? <HomePage /> : (
+      <>  
+      <Outlet />
+      </>
+    )}
+    <ScrollUp />    
     </>
   )
 }

@@ -8,8 +8,8 @@ export default function SignedOutButtons({setAuth}:Props) {
   return (
     <div>
       <MenuItem>
-                <Button  as={NavLink} to='/Login' style={{backgroundColor: '#023e8a',color: 'white',marginRight: '1rem'}} content='Login' className="login-btn" onClick={()=> setAuth(true)}/>
-                <Button  as={NavLink} to='/Signup' style={{backgroundColor: '#FF9F1C',color: 'white'}}  content='Register' className="register-btn" />
+                <Button  as={NavLink} to='/Login' style={{backgroundColor: 'grey',color: 'white',marginRight: '1rem'}} content='Login' className="login-btn" onClick={()=> setAuth(true)}/>
+                <Button  as={NavLink} to='/Signup' style={{backgroundColor: 'grey',color: 'white'}}  content='Register' className="register-btn" />
         </MenuItem>
     </div>
   )

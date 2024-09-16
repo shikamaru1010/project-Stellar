@@ -1,4 +1,5 @@
-import { Segment, Item } from "semantic-ui-react";
+import { Segment} from "semantic-ui-react";
+import Pagination from "../../../layout/pagination/pagination";
 
 export default function ProductDetailedSidebar() {
   return (
@@ -11,27 +12,10 @@ export default function ProductDetailedSidebar() {
         inverted
         
         >
-          2 people want this product
+          people who want this product
         </Segment>
         <Segment attached>
-          <Item.Group relaxed divided>
-            <Item style={{position: 'relative'}}>
-              <Item.Image size='tiny' src='/user.png' />
-              <Item.Content verticalAlign='middle'>
-                <Item.Header as='h3'>
-                  <span>Ratko</span>
-                </Item.Header>
-              </Item.Content>
-            </Item>
-            <Item style={{position: 'relative'}}>
-              <Item.Image size='tiny' src='/user.png' />
-              <Item.Content verticalAlign='middle'>
-                <Item.Header as='h3'>
-                  <span>Nikola</span>
-                </Item.Header>
-              </Item.Content>
-            </Item>
-          </Item.Group>
+          <Pagination />
         </Segment>
     </div>
   )

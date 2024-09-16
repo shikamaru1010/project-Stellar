@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom'
 import { Button, Header, Image, Item, Segment } from 'semantic-ui-react'
 
+
 export default function ProductDetailedHeader() {
   const productImageStyle={
     filter: 'brightness(30%)',
