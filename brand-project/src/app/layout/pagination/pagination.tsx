@@ -21,20 +21,20 @@ export default function Pagination() {
     };
   return (
     <div>
-        <table>
-            <tbody>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Email</th>
+        <table className='pagin-table'>
+            <tbody className='pagin-body'>
+                <tr className='pagin-tr'>
+                    <th className='pagin-th'>ID</th>
+                    <th className='pagin-th'>Name</th>
+                    <th className='pagin-th'>Email</th>
                 </tr>
             </tbody>
-            <tbody>
+            <tbody className='pagin-body'>
                 {currentItems.map((item) => (
-                    <tr key={item.id}>
-                        <td>{item.id}</td>
-                        <td>{item.name}</td>
-                        <td>{item.email}</td>
+                    <tr className='pagin-tr' key={item.id}>
+                        <td className='pagin-td'>{item.id}</td>
+                        <td className='pagin-td'>{item.name}</td>
+                        <td className='pagin-td'>{item.email}</td>
                     </tr>
                 ))}
             </tbody>

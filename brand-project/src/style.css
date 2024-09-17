@@ -62,7 +62,7 @@ SPACING System (px)
     --h1: bold 5.4rem/6.4rem var(--ff);
     --h2: 3.6rem/3.6rem var(--ff);
     --h3: bold 2.4rem/3rem var(--ff);
-    background-color: black;
+    background-color: black; 
 }
 /*********************************/
 /* General  REUSABLE Components*/
@@ -72,7 +72,6 @@ SPACING System (px)
     padding: 2.4rem 1.6rem;
     margin: 0 auto;
 }
-
 
 
 .heading-primary {
@@ -106,7 +105,6 @@ SPACING System (px)
 
 
 }
-
 p {
     color: var(--colorsecondary);
     font-size: 1.6rem;
@@ -261,4 +259,8 @@ html {
     right: 0;
     margin-top:2rem;
     margin-right: 5rem;
+}
+.details{
+    padding: 0.5rem 2rem;
+    width: fit-content;
 }

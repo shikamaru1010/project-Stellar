@@ -5,7 +5,9 @@ export interface ProductsAll{
     description: string,
     price: number,
     title: string,
-    hostUrl: string
+    hostUrl: string,
+    size?: string,
+    color?: string
 }
 
 export const productsData: ProductsAll[] = [
@@ -17,6 +19,8 @@ export const productsData: ProductsAll[] = [
         price: 59.99,
         title: 'Oversized Hoodie',
         hostUrl: '/images/oversized-hoodie.jpg',
+        size: 'M',
+        color: 'blue'
       },
       {
         id: 2,
@@ -26,6 +30,8 @@ export const productsData: ProductsAll[] = [
         price: 74.99,
         title: 'Cargo Pants',
         hostUrl: '/images/cargo-pants.jpg',
+        size: 'S',
+        color: 'blue'
       },
       {
         id: 3,
@@ -35,6 +41,8 @@ export const productsData: ProductsAll[] = [
         price: 34.99,
         title: 'Print T-Shirt',
         hostUrl: '/images/graphic-print-tee.jpg',
+        size: 'XL',
+        color: 'orange'
       },
       {
         id: 4,
@@ -44,6 +52,8 @@ export const productsData: ProductsAll[] = [
         price: 19.99,
         title: 'Beanie Hat',
         hostUrl: '/images/beanie-hat.jpg',
+        size: 'M',
+        color: 'green'
       },
       {
         id: 5,
@@ -53,6 +63,8 @@ export const productsData: ProductsAll[] = [
         price: 54.99,
         title: 'Drop Sweatshirt',
         hostUrl: '/images/drop-shoulder-sweatshirt.jpg',
+        size: 'M',
+        color: 'red'
       },
       {
         id: 6,
@@ -62,6 +74,8 @@ export const productsData: ProductsAll[] = [
         price: 49.99,
         title: 'Plaid Flannel Shirt',
         hostUrl: '/images/plaid-flannel-shirt.jpg',
+        size: 'S',
+        color: 'red'
       },
       {
         id: 7,
@@ -71,6 +85,8 @@ export const productsData: ProductsAll[] = [
         price: 24.99,
         title: 'Bucket Hat',
         hostUrl: '/images/bucket-hat.jpg',
+        size: 'XL',
+        color: 'blue'
       },
       {
         id: 8,
@@ -80,6 +96,8 @@ export const productsData: ProductsAll[] = [
         price: 64.99,
         title: 'Joggers',
         hostUrl: '/images/streetwear-joggers.jpg',
+        size: 'L',
+        color: 'blue',
       },
       {
         id: 9,
@@ -89,6 +107,8 @@ export const productsData: ProductsAll[] = [
         price: 99.99,
         title: 'Bomber Jacket',
         hostUrl: '/images/oversized-bomber-jacket.jpg',
+        size: 'S',
+        color: 'red'
       },
       {
         id: 10,
@@ -98,6 +118,8 @@ export const productsData: ProductsAll[] = [
         price: 119.99,
         title: 'Chunky Sneakers',
         hostUrl: '/images/chunky-sneakers.jpg',
+        size: 'S',
+        color: 'blue'
       },
       {
         id: 11,
@@ -107,6 +129,8 @@ export const productsData: ProductsAll[] = [
         price: 79.99,
         title: 'Techwear Vest',
         hostUrl: '/images/techwear-vest.jpg',
+        size: 'L',
+        color: 'green'
       },
       {
         id: 12,
@@ -116,6 +140,8 @@ export const productsData: ProductsAll[] = [
         price: 69.99,
         title: 'Tie-Dye Hoodie',
         hostUrl: '/images/tie-dye-hoodie.jpg',
+        size: 'M',
+        color: 'green'
       },
       {
         id: 13,
@@ -125,6 +151,8 @@ export const productsData: ProductsAll[] = [
         price: 59.99,
         title: 'Ripped Jeans',
         hostUrl: '/images/ripped-skinny-jeans.jpg',
+        size: 'XL',
+        color: 'orange'
       },
       {
         id: 14,
@@ -134,6 +162,8 @@ export const productsData: ProductsAll[] = [
         price: 44.99,
         title: 'Overisized Shorts',
         hostUrl: '/images/streetwear-shorts.jpg',
+        size: 'M',
+        color: 'blue'
       },
       {
         id: 15,
@@ -143,6 +173,8 @@ export const productsData: ProductsAll[] = [
         price: 109.99,
         title: 'Utility Jacket',
         hostUrl: '/images/utility-jacket.jpg',
+        size: 'S',
+        color: 'red'
       },
       {
         id: 16,
@@ -152,6 +184,8 @@ export const productsData: ProductsAll[] = [
         price: 79.99,
         title: 'Baseball Jersey',
         hostUrl: '/images/baseball-jersey.jpg',
+        size: 'S',
+        color: 'green'
       },
       {
         id: 17,
@@ -161,6 +195,8 @@ export const productsData: ProductsAll[] = [
         price: 69.99,
         title: 'Cargo Pants',
         hostUrl: '/images/camouflage-cargo-pants.jpg',
+        size: 'M',
+        color: 'blue'
       },
       {
         id: 18,
@@ -170,6 +206,8 @@ export const productsData: ProductsAll[] = [
         price: 119.99,
         title: 'Denim Jacket',
         hostUrl: '/images/patchwork-denim-jacket.jpg',
+        size: 'XL',
+        color: 'orange'
       },
       {
         id: 19,
@@ -179,6 +217,8 @@ export const productsData: ProductsAll[] = [
         price: 59.99,
         title: 'Track Pants',
         hostUrl: '/images/track-pants.jpg',
+        size: 'XL',
+        color: 'green'
       },
       {
         id: 20,
@@ -188,6 +228,8 @@ export const productsData: ProductsAll[] = [
         price: 39.99,
         title: 'Long Sleeve Tee',
         hostUrl: '/images/graphic-long-sleeve.jpg',
+        size: 'M',
+        color: 'green'
       },{
         id: 21,
         name: 'Mini Graphic Hoodie',
@@ -196,6 +238,8 @@ export const productsData: ProductsAll[] = [
         price: 39.99,
         title: 'Graphic Hoodie',
         hostUrl: '/images/mini-graphic-hoodie.jpg',
+        size: 'L',
+        color: 'red'
       },
       {
         id: 22,
@@ -205,6 +249,8 @@ export const productsData: ProductsAll[] = [
         price: 29.99,
         title: 'Cargo Joggers',
         hostUrl: '/images/kids-cargo-joggers.jpg',
+        size: 'S',
+        color: 'orange'
       },
       {
         id: 23,
@@ -214,6 +260,8 @@ export const productsData: ProductsAll[] = [
         price: 19.99,
         title: 'Tie-Dye T-Shirt',
         hostUrl: '/images/kids-tie-dye-tee.jpg',
+        size: 'XL',
+        color: 'orange'
       },
       {
         id: 24,
@@ -223,6 +271,8 @@ export const productsData: ProductsAll[] = [
         price: 14.99,
         title: 'Snapback Cap',
         hostUrl: '/images/kids-snapback-cap.jpg',
+        size: 'M',
+        color: 'blue'
       },
       {
         id: 25,
@@ -232,6 +282,8 @@ export const productsData: ProductsAll[] = [
         price: 49.99,
         title: 'Puffer Jacket',
         hostUrl: '/images/kids-puffer-jacket.jpg',
+        size: 'L',
+        color: 'orange'
       },
       {
         id: 26,
@@ -241,6 +293,8 @@ export const productsData: ProductsAll[] = [
         price: 34.99,
         title: 'Fleece Joggers',
         hostUrl: '/images/kids-fleece-joggers.jpg',
+        size: 'S',
+        color: 'red'
       },
       {
         id: 27,
@@ -250,5 +304,7 @@ export const productsData: ProductsAll[] = [
         price: 59.99,
         title: 'Bomber Jacket',
         hostUrl: '/images/kids-mini-bomber-jacket.jpg',
+        size: 'S',
+        color: 'orange'
       },
 ]

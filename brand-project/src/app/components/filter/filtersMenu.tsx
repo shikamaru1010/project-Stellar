@@ -4,7 +4,11 @@ import { Colors } from '../../types/filterOptionsClass/colors';
 import { PriceRange } from '../../types/filterOptionsClass/priceRange'; 
 import "./filter.css"
 
-const FilterComponent: React.FC = () => {
+interface FilterProps{
+  onFIlterChange: (filters : {size: string;color: string;priceRange: {min: number;max: number}}) => void;
+}
+
+const FilterComponent: React.FC<FilterProps> = ({onFIlterChange}) => {
   const sizes = new Sizes();
   const colors = new Colors();
   const priceRange = new PriceRange();
@@ -18,23 +22,37 @@ const FilterComponent: React.FC = () => {
 
   const handleSizeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedSize(e.target.value);
-  };
+    onFIlterChange({
+      size: e.target.value,
+      color: selectedColor,
+      priceRange: priceRangeState
+  });
+};
 
   const handleColorChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedColor(e.target.value);
+    onFIlterChange({
+      size: selectedSize,
+      color: e.target.value,
+      priceRange: priceRangeState
+    });
   };
 
   const handlePriceChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
-    setPriceRangeState((prevRange) => ({
-      ...prevRange,
-      [name]: Number(value),
-    }));
-    priceRange.setPriceRange(priceRangeState.min, priceRangeState.max);
+    setPriceRangeState((prevRange) => {
+      const newRange = { ...prevRange, [name]: Number(value) };
+      onFIlterChange({
+        size: selectedSize,
+        color: selectedColor,
+        priceRange: newRange,
+      });
+      return newRange;
+    });
   };
 
   return (
-    <div className='filters-menu'>
+    <div className='filters-menu' style={{height: '50vh'}}>
       <div className='filters-menu-el'>
         <label>Size</label>
         <select value={selectedSize} onChange={handleSizeChange}>
@@ -78,7 +96,6 @@ const FilterComponent: React.FC = () => {
         />
         </div>
       </div>
-        <a href='' className='filters-button'><p>Filters</p></a>
     </div>
   );
 };

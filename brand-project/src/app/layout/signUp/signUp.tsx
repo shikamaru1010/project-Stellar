@@ -1,5 +1,7 @@
+import { Button } from 'semantic-ui-react'
 import NavBar from '../../components/nav/navBar'
 import '../login/login.css'
+import { NavLink } from 'react-router-dom'
 export default function SignUp() {
   return (
     <>
@@ -29,7 +31,7 @@ export default function SignUp() {
             <a href="/home" className='login-btn'>
               Create account
             </a>
-            <p style={{textDecoration: 'underline'}}>Already have an account? <a  href="/Login" className='login-btn' style={{marginLeft: '2rem',padding: '0.2rem 1.5rem'}}>Log in</a></p>
+            <p style={{textDecoration: 'underline'}}>Already have an account? <Button as={NavLink} to='/Login' className='login-btn' style={{marginLeft: '2rem',padding: '0.2rem 1.5rem'}}>Log in</Button></p>
       </div> 
     </div>
     </>
