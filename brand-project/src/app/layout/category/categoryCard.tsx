@@ -11,7 +11,7 @@ export default function categoryCard({categoryProduct}:any) {
             <h3 className="text-titles">{categoryProduct.gender}</h3>
             <a href="#" className="buy text-text">Buy now</a>
         </div>
-    </div>
+      </div>
     </div>
   )
 }

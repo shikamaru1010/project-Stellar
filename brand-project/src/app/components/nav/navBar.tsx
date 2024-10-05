@@ -3,6 +3,7 @@ import { Container, Menu, MenuItem } from "semantic-ui-react";
 import SignedOutButtons from "./signedOutButtons";
 import SignedInMenu from "./signedInMenu";
 import { useState } from "react";
+
 export default function NavBar(){
     const [auth,setAuth] = useState(false);
 

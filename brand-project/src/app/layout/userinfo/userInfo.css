@@ -10,17 +10,28 @@
     font-size: 3.2rem;
 }
 
-
-
-.div-elements p{
-    color: white;
-    margin: auto;
-    text-align: start;
-    padding-left: 20rem;
+.div-section{
+    display: flex;
+    width: 80%;
+    gap: 30rem;
+}
+.div-elements label{
     display: flex;
     flex-direction: column;
-    padding-top: 2rem;
+    text-align: start;
+    color: white;
     font-size: 2rem;
     font-weight: bold;
-    color: var(--coloraccent);
+    margin-top: 2rem;
+    margin-left: 20rem;
+}
+
+.user-info-table{
+    background-color: white;
+    width: 500px;
+    border-radius: 20px;
+}
+
+.user-info-table tr{
+    font-size: 1.6rem;
 }

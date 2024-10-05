@@ -1,12 +1,13 @@
-interface Adress{
+/*interface Adress{
     street: string,
     city: string,
     country: string
-}
+}*/
 
 export interface User {
-    firstName: string,
-    lastName: string,
-    email: string,
-    adress: Adress
+    user_id: number;
+    user_name: string;
+    password: string;
+    email: string;
+    signUpDate: string; 
 }

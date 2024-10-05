@@ -40,7 +40,7 @@ font-family: 'Ysabeau', sans-serif; */
 .card{
     position: relative;
     width: 25rem;
-    height: 35rem;
+    height: 35rem !important;
     border-radius: 20px;
     overflow: hidden;
 }

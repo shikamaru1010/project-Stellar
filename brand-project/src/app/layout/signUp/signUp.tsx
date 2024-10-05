@@ -12,7 +12,7 @@ export default function SignUp() {
 
         <h1 style={{marginTop: '4rem'}}>Sign up</h1>
         <h3 style={{marginTop: '2rem',marginBottom: '1rem'}}>Enter your credentials<br></br>
-        <span style={{fontSize: '1.2rem'}}>Remember name and password!</span>
+        <span style={{fontSize: '1.2rem'}}>Remember username and password!</span>
         </h3>
         
         </div>
@@ -21,6 +21,7 @@ export default function SignUp() {
             
             <input type="name" placeholder="First Name"/>
             <input type="surname" placeholder="Last Name"/>
+            <input type="username" placeholder="Username"/>
             <input type="email" placeholder="Email"/>
             <input type="password" placeholder=" new Password"/>
             <input type="password" placeholder="re-type Password"/>

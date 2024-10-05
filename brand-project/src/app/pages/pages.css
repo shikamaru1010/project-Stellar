@@ -48,3 +48,6 @@
 .spa-element a{
     color: black;
 }
+.btn-getstarted p:hover {
+    color: #C08497;
+}
